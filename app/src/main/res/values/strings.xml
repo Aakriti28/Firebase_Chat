@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Firebase Chat</string>
+    <string name="new_a_new_account">NEW A NEW ACCOUNT?</string>
+    <string name="this_is_taz_chat_app">This is Taz Chat App</string>
+    <string name="this_is_main_activity">This is Main Activity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="create_a_new_account">CREATE A NEW ACCOUNT</string>
+    <string name="logout">Logout</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="all_users">All Users</string>
+    <string name="welcome_to_ntaz_chat">Welcome to \nTaz Chat!</string>
+    <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="create_a_new_account2">Create a New Account</string>
+    <string name="login">Login</string>
+    <string name="login_to_your_account">Login to your Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_image">User Image</string>
+    <string name="user1">User1</string>
+    <string name="type_a_message">Type a message...</string>
+    <string name="profile">PROFILE</string>
+    <string name="current_user">current user</string>
+</resources>
