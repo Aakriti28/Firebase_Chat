@@ -1,0 +1,3 @@
+1) email - candace@gmail.com	password - password
+2) email - ferb@gmail.com	password - password
+3) email - baljeet@gmail.com	password - password
