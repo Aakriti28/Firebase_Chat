@@ -2,7 +2,7 @@
 <p> A Messaging Application created using <b>FireBase</b> in<b> Android Studio</b>.
 The Application is linked to a project in FireBase which stores the data of users and the messages sent between them in a <b>Realtime Database</b> linked in the project. A Realtime Database stores and syncs data in real time across all connected devices. </p>
 <br>
-<h4> Instructions to installing the Application</h4>
+<h4> Instructions to installing the built version of Application directly</h4>
 <p> Go to the folder <b>apk</b> which contains the built Application. It contains the Debug Version as well as the Release Version of Application. Navigate to either folder for the <b>apk and json</b> file of App. Download both and install the apk to run the Taz Chat App. </p>
 <br>
 <h4> Features available in the App as now- </h4>
