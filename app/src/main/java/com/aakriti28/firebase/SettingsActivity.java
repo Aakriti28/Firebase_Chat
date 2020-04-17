@@ -73,6 +73,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        reference.keepSynced(true);
 
         storageReference = FirebaseStorage.getInstance().getReference("uploads");
 
@@ -169,6 +170,7 @@ public class SettingsActivity extends AppCompatActivity {
                         String mUri = downloadUri.toString();
 
                         reference = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+                        reference.keepSynced(true);
                         HashMap <String, Object> map = new HashMap<>();
                         map.put("imageURL", mUri);
                         reference.updateChildren(map);

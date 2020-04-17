@@ -60,6 +60,7 @@ public class ChatFragment extends Fragment {
         usersList = new ArrayList<>();
 
         reference = FirebaseDatabase.getInstance().getReference("Chats");
+        reference.keepSynced(true);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -93,6 +94,7 @@ public class ChatFragment extends Fragment {
         mUsers = new ArrayList<>();
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
+        reference.keepSynced(true);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

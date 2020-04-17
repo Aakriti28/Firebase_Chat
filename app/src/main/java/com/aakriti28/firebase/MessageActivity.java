@@ -102,6 +102,7 @@ public class MessageActivity extends AppCompatActivity {
 
 
         reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
+        reference.keepSynced(true);
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -131,6 +132,7 @@ public class MessageActivity extends AppCompatActivity {
 
     private  void seenMessage(final String userid){
         reference = FirebaseDatabase.getInstance().getReference("Chats");
+        reference.keepSynced(true);
         seenListener = reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -154,6 +156,7 @@ public class MessageActivity extends AppCompatActivity {
     private void sendMessage(String sender, String receiver, String message){
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+        reference.keepSynced(true);
 
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("sender", sender);
@@ -169,6 +172,7 @@ public class MessageActivity extends AppCompatActivity {
         mchat = new ArrayList<>();
 
         reference = FirebaseDatabase.getInstance().getReference("Chats");
+        reference.keepSynced(true);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -195,6 +199,7 @@ public class MessageActivity extends AppCompatActivity {
 
     private void status(String status){
         reference = FirebaseDatabase.getInstance().getReference("Users").child(fuser.getUid());
+        reference.keepSynced(true);
 
         HashMap<String, Object> hashMap = new HashMap<>();
         hashMap.put("status", status);

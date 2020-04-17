@@ -99,6 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
                     String userid = user.getUid();
 
                     reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
+                    reference.keepSynced(true);
 
                     HashMap<String, String> hashMap = new HashMap<>();
                     hashMap.put("id", userid);
