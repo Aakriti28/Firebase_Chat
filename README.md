@@ -1,4 +1,4 @@
-<h1> This is TAZ CHAT</h1>
+<h1> This is HANGOUT</h1>
 <p> A Messaging Application created using <b>FireBase</b> in<b> Android Studio</b>.
 The Application is linked to a project in FireBase which stores the data of users and the messages sent between them in a <b>Realtime Database</b> linked in the project. A Realtime Database stores and syncs data in real time across all connected devices. </p>
 <br>
@@ -20,7 +20,7 @@ The Application is linked to a project in FireBase which stores the data of user
 <p> 12) Messaging page allows to send text messages. It shows the status of last message - <b>"Delivered"</b> initially but changes to <b>"Seen"</b> as soon as the receiver reads the text</p>
 
 <br>
-<h4> For Devcom evaluation </h4>
+<h4> For users installing the App </h4>
 <p> The Login.txt file contains the login credentials of a few registred users which can be used to test the functioning of features mentioned. There is always the option of registering new users too.
 The Profile Picture uploading option might take a while and if the file size is large, the App may crash. No exceptions were encountered during the thorough checks I performed. The only reason for the App slowing down or crashing was a Profile Picture too large in size. Try with limited size pictures and the App should work fine.</p>
 
